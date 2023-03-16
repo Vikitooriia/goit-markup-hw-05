@@ -42,7 +42,6 @@ body {
     0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-
 .logo {
     color: var(--accent-color);
     font-size: 18px;
@@ -112,6 +111,7 @@ span {
 
 .current {
     color: var(--focus);
+    position: relative;
 }
 .current::after {
     content: "";
@@ -125,6 +125,9 @@ span {
     left: 0;    
 }
 
+.link.current {
+    color: var(--focus);
+}
 
 /*auth nav*/
 .auth-nav {
@@ -679,7 +682,7 @@ img {
     
 }
 
-.pic-element:hover .text-overlay {
+.pic-link:hover .text-overlay {
     transform: translateY(0);
 }
 
